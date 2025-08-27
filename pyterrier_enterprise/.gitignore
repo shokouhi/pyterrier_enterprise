@@ -1,0 +1,18 @@
+# Python / venv
+.venv/
+.venv311/
+venv/
+__pycache__/
+*.pyc
+
+# Local env & secrets
+.env
+.env.*
+
+# GCP / Firebase creds
+uploader/*.json
+
+# Optional: local data
+scraper/*.db
+*.log# GCP / Firebase creds
+uploader/*.json
