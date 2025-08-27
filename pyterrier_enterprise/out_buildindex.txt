@@ -1,0 +1,30 @@
+(.venv311) PS C:\Users\milads\Documents\code\pyterrier_enterprise> python -m src.build_index
+C:\Users\milads\Documents\code\pyterrier_enterprise\.venv311\Lib\site-packages\tika\__init__.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__('pkg_resources').declare_namespace(__name__)
+Java started and loaded: pyterrier.java, pyterrier.terrier.java [version=5.11 (build: craig.macdonald 2025-01-13 21:29), helper_version=0.0.8]
+Indexing into: \wccontainer\terrier_index
+17:20:56.011 [main] ERROR org.terrier.structures.Index -- Cannot create new index: path C:\Users\milads\Documents\code\pyterrier_enterprise\.\var\\wccontainer\terrier_index does not exist, or cannot be written to
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\milads\Documents\code\pyterrier_enterprise\src\build_index.py", line 46, in <module>
+    main()
+  File "C:\Users\milads\Documents\code\pyterrier_enterprise\src\build_index.py", line 41, in main
+    indexref = indexer.index(_gen())
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\milads\Documents\code\pyterrier_enterprise\.venv311\Lib\site-packages\pyterrier\utils.py", line 139, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\milads\Documents\code\pyterrier_enterprise\.venv311\Lib\site-packages\pyterrier\terrier\index.py", line 682, in index
+    indexer.index(javaDocCollection)
+  File "jnius\\jnius_export_class.pxi", line 1163, in jnius.JavaMultipleMethod.__call__
+  File "jnius\\jnius_export_class.pxi", line 877, in jnius.JavaMethod.__call__
+  File "jnius\\jnius_export_class.pxi", line 971, in jnius.JavaMethod.call_method
+C:\Users\milads\Documents\code\pyterrier_enterprise\.venv311\Lib\site-packages\tika\__init__.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated forC:\Users\milads\Documents\code\pyterrier_enterprise\.venv311\Lib\site-packages\tika\__init__.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Java started and loaded: pyterrier.java, pyterrier.terrier.java [version=5.11 (build: craig.macdonald 2025-01-13 21:29), helper_version=0.0.8]
+Indexing into: Z:\wccontainer\terrier_index
+17:21:46.568 [main] WARN org.terrier.structures.indexing.Indexer -- Adding an empty document to the index (Z:\wccontainer\doc_urls\10073395_TC_QPF_talk072007.ppt) - further warnings are suppressed       
+13:40:55.305 [main] WARN org.terrier.structures.indexing.Indexer -- Indexed 2111 empty documents
+Index complete.
+IndexRef: <org.terrier.querying.IndexRef at 0x1a3c697e570 jclass=org/terrier/querying/IndexRef jself=<LocalRef obj=0x-1b40349e at 0x1a3c68be8d0>>
+(.venv311) PS C:\Users\milads\Documents\code\pyterrier_enterprise>

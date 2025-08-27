@@ -1,0 +1,16 @@
+python -m src.sample_and_eval --index "Z:\wccontainer\terrier_index" --map ".\runs\query_id_map.tsv" --qrels ".\runs\targets.qrels" --n 5 --k 10 --metrics nDCG@10 P@10 --run_out ".\runs\sample_bm25.trec" --metrics_out ".\runs\sample_metrics.csv"   --tag BM25s\Documents\code\pyterrier_enterprise>
+Java started and loaded: pyterrier.java, pyterrier.terrier.java [version=5.11 (build: craig.macdonald 2025-01-13 21:29), helper_version=0.0.8]
+Sampled queries (qid → query):
+  53215983509864 → iso iec jtc1 sc2 wg2 meeting 65 n5020
+  132152850218032 → constitution of the socialist federal republic of yugoslavia 1963 doc
+  127812383155076 → topoletraj doc
+  7255701450059 → wywiad agen
+  110222446301330 → kolasa che mno trials
+pt.Experiment: 100%|███████████████████████████████████████████| 1/1 [01:46<00:00, 106.23s/system]
+=== Sample & Eval Summary ===
+Sampled queries : 5
+Index           : Z:\wccontainer\terrier_index
+Run             : runs\sample_bm25.trec
+Metrics CSV     : runs\sample_metrics.csv
+name  nDCG@10  P@10
+BM25 0.110686  0.06
